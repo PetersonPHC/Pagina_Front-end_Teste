@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Página do Site</title>
+
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link rel="stylesheet" href="./css/responsividade.css" />
+
+
+    <link rel="stylesheet" href="./lib/nivo-slider/themes/default/default.css" />
+    <link rel="stylesheet" href="./lib/nivo-slider/nivo-slider.css" />
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho-1">
+            <a href="#">11 1234-1234</a>
+            <a href="#">11 1234-1234</a>
+        </div>
+        <div class="cabecalho-2">
+            <img id="logo" src="./img/logo.jpg" alt="logo">
+
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="submenu">
+                        <a>EMPRESA</a>
+                        <ul class="submenu-conteudo">
+
+                            <li>
+                                <a href="#">Sobre Nós</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Nossa Equipe</a>
+                            </li>
+
+                            <li>
+                                <a href="#">História</a>
+                            </li>
+
+                            <li class="submenu-filho">
+                                <a>Regionais</a>
+                                <ul class="submenu-conteudo-filho">
+                                    <li>
+                                        <a href="#">São Paulo - SP</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Rio de Janeiro - RJ</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Belo Horizonte - BH</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Vitória - ES</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">CLIENTE</a>
+                    </li>
+
+                    <li>
+                        <a href="#">CONTATO</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+        </div>
+    </header>
+    <main>
+        <div id="slider" class="nivoSlider theme-default">
+            <img class="imagemSlider" src="./img/company.jpg">
+            <img class="imagemSlider" src="./img/team.jpg">
+            <img class="imagemSlider" src="./img/meeting.jpg">
+        </div>
+    </main>
+
+    <section class="conteudo-com-imagem">
+        <div class="texto-conteudo">
+            <h2>TESTE DE HTML E CSS</h2>
+            <p>
+                • Organização do código (quanri mais limpo melhor);<br>
+                • Nível de detalhismo (quanto mais identico melhor);<br>
+                • Tempo de desenvolvimento (seja sincero ao enviar o tempo gasto);<br>
+                <br>
+                Obrigado e boa tarde!
+            </p>
+        </div>
+        <div class="imagem-conteudo">
+            <img src="./img/CEO.jpg" alt="chief executive officer">
+        </div>
+    </section>
+
+    <h3>BOXES DE DESTAQUE</h3>
+    <section class="boxes-imagens">
+        <figure>
+            <img src="./img/work.jpg" alt="Descrição da Imagem 1">
+            <figcaption><a href="#"> Um texto descritivo com link apenas. </a></figcaption>
+        </figure>
+        <figure>
+            <img src="./img/soft-skils.jpg" alt="Descrição da Imagem 2">
+            <figcaption><a href="#"> Um texto descritivo com link apenas. </a></figcaption>
+        </figure>
+        <figure>
+            <img src="./img/project.jpg" alt="Descrição da Imagem 3">
+            <figcaption><a href="#"> Um texto descritivo com link apenas. </a></figcaption>
+        </figure>
+        <figure>
+            <img src="./img/boxes.jpg" alt="Descrição da Imagem 4">
+            <figcaption><a href="#"> Um texto descritivo com link apenas. </a></figcaption>
+        </figure>
+    </section>
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">HOME</a>
+            <a href="#">EMPRESA</a>
+            <a href="#">CLIENTES</a>
+            <a href="#">CONTATO</a>
+        </div>
+        <div class="footer-bottom">
+            RODAPE
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./lib/nivo-slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
+    </script>
+
+</body>
+
+</html>

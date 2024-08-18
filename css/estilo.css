@@ -1,0 +1,268 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flexbox;
+	flex-direction: column;
+	background-color: white;
+}
+
+#logo {
+	display: flex;
+	height: 80px;
+	width: 200px;
+	padding-top: 10px;
+}
+
+header .cabecalho-1 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+
+	padding-right: 18.3em;
+	background-color: darkblue;
+}
+
+header .cabecalho-1 a {
+	display: flex;
+	justify-content: center;
+
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 15px;
+	font-size: 15px;
+}
+
+header .cabecalho-2 {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+
+	padding-left: 16em;
+	padding-right: 16.5em;
+}
+
+header .cabecalho-2 nav {
+	padding-bottom: 5px;
+}
+
+header .cabecalho-2 a {
+	color: rgb(126, 125, 125);
+	margin-right: 15px;
+	font-size: 16px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+nav ul li {
+	position: relative;
+	margin-right: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	display: block;
+	padding: 10px;
+}
+
+nav ul li a:hover {
+	background-color: whitesmoke;
+	border-radius: 5px;
+}
+
+.submenu-conteudo {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: darkblue;
+
+	border-radius: 5px;
+	z-index: 10;
+}
+
+.submenu-conteudo li {
+	margin: 0;
+}
+
+.submenu-conteudo a {
+	color: white;
+	display: block;
+	width: 100%;
+}
+
+.submenu-conteudo a:hover {
+	background-color: white;
+	color: darkblue;
+}
+
+.submenu:hover .submenu-conteudo {
+	display: block;
+}
+
+.submenu-conteudo-filho {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	background-color: darkblue;
+
+	border-radius: 5px;
+	z-index: 20;
+	width: 100%;
+}
+
+.submenu-conteudo-filho li {
+	margin: 0;
+}
+
+.submenu-conteudo-filho a {
+	color: white;
+
+	display: block;
+	width: 100%;
+}
+
+.submenu-conteudo-filho a:hover {
+	background-color: white;
+	color: darkblue;
+}
+
+.submenu-filho:hover .submenu-conteudo-filho {
+	display: block;
+}
+
+main {
+	display: flex;
+	background-color: rgb(184, 181, 181);
+	justify-content: center;
+	align-content: center;
+}
+
+#slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 894px;
+	height: 290px;
+	background-color: black;
+}
+
+h3 {
+	color: rgb(126, 125, 125);
+	font-size: 20px;
+	padding-top: 10px;
+	padding-left: 14.4em;
+}
+
+.boxes-imagens {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px;
+	padding-left: 18em;
+	padding-right: 15em;
+	background-color: white;
+}
+
+.boxes-imagens figure {
+	flex: 1 1 100%; /* Em telas menores, cada imagem ocupa 100% da largura disponível */
+}
+
+.boxes-imagens img {
+	width: 170px;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.boxes-imagens figcaption {
+	margin-top: 10px;
+	margin-left: 3px;
+	font-size: 14px;
+	color: #333;
+	word-wrap: break-word;
+	width: 80%;
+}
+
+.conteudo-com-imagem {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-top: 10px;
+	padding-left: 18em;
+	padding-right: 19.5em;
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+.texto-conteudo {
+	max-width: 60%;
+}
+
+.texto-conteudo h2 {
+	margin-bottom: 15px;
+	font-size: 24px;
+	color: rgb(126, 125, 125);
+}
+
+.texto-conteudo p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: rgb(126, 125, 125);
+}
+
+.imagem-conteudo img {
+	width: 325px;
+	height: 212px;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+footer {
+	background-color: rgb(56, 56, 56);
+	padding: 20px 0;
+	color: rgb(189, 189, 189);
+	text-align: center;
+	position: relative;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.footer-links a {
+	color: rgb(126, 125, 125);
+	margin: 0 17px;
+	font-size: 16px;
+}
+
+.footer-bottom {
+	margin-top: 80px;
+	font-weight: bold;
+	margin-bottom: 100px;
+	font-size: 16px;
+}
